@@ -24,18 +24,18 @@ export default function Section3() {
     const scale = useTransform(
         scrollYProgress,
         [0, 1],
-        [1.1, 1]
+        [1.5, 1.4]
     );
 
     return (
         <>
-            <div className="relative overflow-y-hidden">
+            <div className="relative ">
                 <Image className="object-cover w-full mt-[-13vh]" src={bg} alt=""/>
                 <motion.div
                     ref={ref}
                     style={{rotate, scale}}
-                    className="absolute object-cover z-10 px-[15vw] rotate-2  top-[40vw] w-full">
-                    <Image className="" src={tiket} alt=""/>
+                    className="absolute object-cover z-10  left-1/2   -translate-x-1/2  rotate-2  top-[46vw] ">
+                    <Image className="w-[80vw] " src={tiket} alt=""/>
                 </motion.div>
 
 

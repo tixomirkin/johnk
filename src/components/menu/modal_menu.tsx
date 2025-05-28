@@ -50,16 +50,15 @@ const ModalMenu = ({ handleClose, modalOpen } : {handleClose: () => void, modalO
                 <div
                     className=" flex-col justify-center items-start">
                     <NavItem to="/" isActive={true}>Главная</NavItem>
-                    <NavItem to="/" isActive={false}>История</NavItem>
-                    <NavItem to="/" isActive={false}>Путь</NavItem>
-                    <NavItem to="/" isActive={false}>SPUMCO</NavItem>
-                    <NavItem to="/" isActive={false}>Стиль</NavItem>
+                    <NavItem to="/childhood" isActive={false}>Детство</NavItem>
+                    <NavItem to="/" isActive={false}>Путь к успеху</NavItem>
                     <NavItem to="/" isActive={false}>Рен и Стимпи</NavItem>
-                    <NavItem to="/" isActive={false}>Проекты</NavItem>
+                    <NavItem to="/" isActive={false}>Уникальный стиль</NavItem>
+                    <NavItem to="/" isActive={false}>SPUMCO</NavItem>
+                    <NavItem to="/" isActive={false}>Другие проекты</NavItem>
                     <NavItem to="/" isActive={false}>Критика</NavItem>
-                    <NavItem to="/" isActive={false}>Искусство</NavItem>
+                    <NavItem to="/" isActive={false}>Современное искусство</NavItem>
                     <NavItem to="/" isActive={false}>Наши дни</NavItem>
-                    <button onClick={handleClose}>Close</button>
                 </div>
 
             </motion.div>

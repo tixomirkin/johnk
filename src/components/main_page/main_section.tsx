@@ -1,7 +1,6 @@
 "use client"
 
 import main_img from "@/public/main_page/1_main_section/main_img.png"
-import main_bg from "@/public/main_page/1_main_section/main_bg.svg"
 import logo from "@/public/main_page/1_main_section/logo.svg"
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -26,9 +25,10 @@ export default function MainSection() {
                                        motion-preset-blur-left motion-delay-400" src={main_img} alt=""/>
                 </motion.div>
 
+                {/*<Image src={main_bg} alt="" className=" absolute -top-0 left-0 bg-center h-screen  -z-30"/>*/}
                 <div
-                    style={{backgroundImage: `url(${main_bg})`}}
-                    className={` bg-cover absolute top-0 bg-center h-screen w-screen -z-30`}>
+                    // style={{backgroundImage: `url('../../../public/main_page/1_main_section/main_bg.svg')`}}
+                    className={` bg-cover absolute top-0 bg-center h-screen w-screen -z-30 main-bg-img`}>
 
                 </div>
 

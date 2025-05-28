@@ -75,6 +75,10 @@ body {
   color: var(--foreground);
 }
 
+.main-bg-img {
+  background-image: url("../../public/main_page/1_main_section/main_bg.svg");
+}
+
 .body-lock {
   overflow: hidden;
   /*position: fixed;*/

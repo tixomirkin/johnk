@@ -1,6 +1,6 @@
 'use client'
 
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 
@@ -18,25 +18,25 @@ export default function Header() {
 
     const backgroundColor = useTransform(
         scrollY,
-        [screenHeight * 0.8, screenHeight * 1],
+        [screenHeight * 0.8, screenHeight],
         ["rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0.5)"]
     );
 
     const paddingY = useTransform(
         scrollY,
-        [screenHeight * 0.8, screenHeight * 1],
-        [convertRemToPixels(0.25) * 10, convertRemToPixels(0.25) * 0]
+        [screenHeight * 0.8, screenHeight],
+        [convertRemToPixels(0.25) * 10, convertRemToPixels(0.25)]
     );
 
     const paddingX = useTransform(
         scrollY,
-        [screenHeight * 0.8, screenHeight * 1],
+        [screenHeight * 0.8, screenHeight],
         [convertRemToPixels(0.25) * 25, convertRemToPixels(0.25) * 10]
     );
 
     const scale = useTransform(
         scrollY,
-        [screenHeight * 0.8, screenHeight * 1],
+        [screenHeight * 0.8, screenHeight],
         [1, 0.6]
     );
 

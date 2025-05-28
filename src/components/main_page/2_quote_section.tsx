@@ -1,6 +1,5 @@
 import Image from "next/image";
 import bg from "@/public/main_page/2_quote_section/quote_bg.png"
-import sign from "@/public/main_page/3_section/sing.svg"
 import bg_button from "@/public/main_page/2_quote_section/bg_button.png"
 import qu from "@/public/main_page/2_quote_section/quote.png"
 import quote_img from "@/public/main_page/2_quote_section/quote_img.png"

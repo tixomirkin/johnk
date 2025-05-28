@@ -1,5 +1,7 @@
+"use client"
+
 // import Image from "next/image";
-import bg_main from "@/public/main_page/1_main_section/main_bg.svg"
+// import bg_main from "@/public/main_page/1_main_section/main_bg.svg"
 import MainSection from "@/components/main_page/main_section";
 import QuoteSection from "@/components/main_page/2_quote_section";
 import Section3 from "@/components/main_page/3_section";

@@ -1,8 +1,6 @@
 "use client"
 
 import Image from "next/image";
-import img from "@/public/main_page/3_section/section_img.svg"
-import sign from "@/public/main_page/3_section/sing.svg"
 import bg from "@/public/main_page/3_section/bg.svg"
 import tiket from "@/public/main_page/3_section/tiket.png"
 

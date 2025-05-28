@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ObserverProvider from "@/utils/ObserverProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,12 +24,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html className="scroll-smooth overscroll-y-none" lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
       >
-        {children}
+      <ObserverProvider>
+          {children}
+      </ObserverProvider>
       </body>
     </html>
   );
 }
+
+// background: linear-gradient(180deg, #807401 0%, #9C6E0B 0.01%, #DBC60A 15.38%, #88750C 100%);

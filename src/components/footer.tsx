@@ -7,11 +7,11 @@ import logo from "@/public/footer/footer_logo.svg"
 
 export default function Footer() {
     return (
-        <div className="relative mt-[-26vw] ">
+        <div className="relative  ">
             <Image src={footer_bg} alt=""/>
-            <div className="h-40 bg-[#00188C] pb-50">
+            <div className="h-40 bg-[#00188C] pb-80">
                 <div className="flex flex-row gap-4 items-end justify-center mb-5">
-                    <Image className="intersect:motion-preset-fade motion-delay-500 motion-duration-2000" src={vk} alt=""/>
+                    <Image className="" src={vk} alt=""/>
                     <Image src={yt} alt=""/>
                     <Image src={tg} alt=""/>
                 </div>

@@ -1,17 +1,17 @@
 'use client'
 
 import {useState} from "react";
-import Image from "next/image";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 
-import logo from "@/public/logo_header.svg"
 import ModalMenu from "@/components/menu/modal_menu";
 import {useWindowSize} from "@/utils/useWindowSize";
 import convertRemToPixels from "@/utils/convertRemToPixels";
+import Link from "next/link";
+import Logo from "@/components/menu/logo";
 
 
 
-export default function Header() {
+export default function Header({logoFill = "white", thisUrl = "/"}) {
     const [isOpen, setIsOpen] = useState(false);
     const { scrollY } = useScroll();
     const { height: screenHeight } = useWindowSize();
@@ -21,6 +21,12 @@ export default function Header() {
         [screenHeight * 0.8, screenHeight],
         ["rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0.5)"]
     );
+
+    // const fillColor = useTransform(
+    //     scrollY,
+    //     [screenHeight * 0.8, screenHeight],
+    //     [logoFill, "rgba(255, 255, 255, 1)"]
+    // );
 
     const paddingY = useTransform(
         scrollY,
@@ -49,7 +55,10 @@ export default function Header() {
             <motion.div
                 style={{scale}}
                 className="z-50">
-                <Image className="z-50" width={100} src={logo} alt=""/>
+                <Link href="/">
+                    {/*<Image className="z-50 fill-amber-50 test" color={"#807401"} style={{fill: "#807401"}} width={100} src={logo} alt=""/>*/}
+                    <Logo fill={logoFill} />
+                </Link>
             </motion.div>
 
             <motion.button
@@ -71,7 +80,7 @@ export default function Header() {
             </motion.button>
 
             <AnimatePresence>
-                {isOpen && <ModalMenu modalOpen={isOpen} handleClose={() => setIsOpen(false)} />}
+                {isOpen && <ModalMenu modalOpen={isOpen} thisUrl={thisUrl} handleClose={() => setIsOpen(false)} />}
             </AnimatePresence>
         </motion.header>
     )

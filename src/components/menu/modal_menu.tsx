@@ -33,7 +33,7 @@ const blurAnim: Variants = {
 };
 
 
-const ModalMenu = ({ handleClose, modalOpen } : {handleClose: () => void, modalOpen: boolean} ) => {
+const ModalMenu = ({ handleClose, modalOpen, thisUrl } : {handleClose: () => void, modalOpen: boolean, thisUrl: string} ) => {
 
     useLockScroll(modalOpen);
 
@@ -49,16 +49,16 @@ const ModalMenu = ({ handleClose, modalOpen } : {handleClose: () => void, modalO
             >
                 <div
                     className=" flex-col justify-center items-start">
-                    <NavItem to="/" isActive={true}>Главная</NavItem>
-                    <NavItem to="/childhood" isActive={false}>Детство</NavItem>
-                    <NavItem to="/" isActive={false}>Путь к успеху</NavItem>
-                    <NavItem to="/" isActive={false}>Рен и Стимпи</NavItem>
-                    <NavItem to="/" isActive={false}>Уникальный стиль</NavItem>
-                    <NavItem to="/" isActive={false}>SPUMCO</NavItem>
-                    <NavItem to="/" isActive={false}>Другие проекты</NavItem>
-                    <NavItem to="/" isActive={false}>Критика</NavItem>
-                    <NavItem to="/" isActive={false}>Современное искусство</NavItem>
-                    <NavItem to="/" isActive={false}>Наши дни</NavItem>
+                    {/*<NavItem to="/" thisUrl={thisUrl}>Главная</NavItem>*/}
+                    <NavItem to="/childhood" thisUrl={thisUrl}>Детство</NavItem>
+                    <NavItem to="/path-to-success" thisUrl={thisUrl}>Путь к успеху</NavItem>
+                    <NavItem to="/ren-stimpy" thisUrl={thisUrl}>Рен и Стимпи</NavItem>
+                    <NavItem to="/style" thisUrl={thisUrl}>Уникальный стиль</NavItem>
+                    <NavItem to="/spumco" thisUrl={thisUrl}>SPUMCO</NavItem>
+                    <NavItem to="/other" thisUrl={thisUrl}>Другие проекты</NavItem>
+                    <NavItem to="/critics" thisUrl={thisUrl}>Критика</NavItem>
+                    <NavItem to="/art" thisUrl={thisUrl}>Современное искусство</NavItem>
+                    <NavItem to="/now" thisUrl={thisUrl}>Наши дни</NavItem>
                 </div>
 
             </motion.div>

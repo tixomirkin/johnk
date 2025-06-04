@@ -10,7 +10,7 @@ export default function Childhood() {
             <Header thisUrl="/childhood"/>
             <div className="relative w-full">
                 <Image src={page_img} className="w-full mb-[-16vw]" alt=""/>
-                <NextBtn className="absolute bottom-[25vw] right-[10vw] w-70" to="/childhood">Путь к успеху</NextBtn>
+                <NextBtn className="absolute bottom-[25vw] right-[10vw] w-70" to="/path-to-success">Путь к успеху</NextBtn>
             </div>
             <Footer/>
         </>

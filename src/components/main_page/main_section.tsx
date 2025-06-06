@@ -17,9 +17,9 @@ export default function MainSection() {
 
                 <motion.div
                     style={{scale}}
-                    className="flex flex-row justify-between items-end absolute bottom-0 w-full pl-22"
+                    className="flex flex-row justify-center items-end absolute bottom-0 w-full pl-22"
                 >
-                    <Image className="object-contain w-1/2 pt-20
+                    <Image className="object-contain w-2/5 pt-20 pb-20
                                       motion-preset-blur-right motion-delay-400" src={logo} alt=""/>
                     <Image className="object-contain w-1/2 max-h-[80vh]
                                        motion-preset-blur-left motion-delay-400" src={main_img} alt=""/>

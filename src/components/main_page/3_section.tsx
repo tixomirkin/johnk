@@ -1,8 +1,9 @@
 "use client"
 
 import Image from "next/image";
-import bg from "@/public/main_page/3_section/bg.svg"
+import bg from "@/public/main_page/3_section/bg.png"
 import tiket from "@/public/main_page/3_section/tiket.png"
+import sign from "@/public/main_page/3_section/sign.png"
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import {useRef} from "react";
@@ -29,30 +30,31 @@ export default function Section3() {
 
     return (
         <>
-            <div className="relative ">
+            <div className="relative  ">
+                <Image src={sign} alt="" className="object-contain absolute -top-6 right-0 w-[42vw] z-60" />
                 <Image className="object-cover w-full mt-[-13vh]" src={bg} alt=""/>
                 <motion.div
                     ref={ref}
                     style={{rotate, scale}}
-                    className="absolute object-cover z-10  left-1/2   -translate-x-1/2  rotate-2  top-[46vw] ">
+                    className="absolute object-cover z-20  left-1/2   -translate-x-1/2  rotate-2  top-[46vw] ">
                     <Image className="w-[80vw] " src={tiket} alt=""/>
                 </motion.div>
 
 
-                <div className="absolute top-[30vw] left-10 text-xl w-[70vw]">
-                    Джон Крисфалуси - выдающийся художник, запомнившийся своей <br/>
-                    эксцентричной анимацией и сумасшедшими сюжетами. <br/>
-                    Яркие, карикатурные образы героев мультфильмов, оживших в <br/>
-                    совершенно необыкновенных мирах, характер которых, <br/>
-                    напрямую связан с характером автора.
-                </div>
+                {/*<div className="absolute top-[30vw] left-10 text-xl w-[70vw]">*/}
+                {/*    Джон Крисфалуси - выдающийся художник, запомнившийся своей <br/>*/}
+                {/*    эксцентричной анимацией и сумасшедшими сюжетами. <br/>*/}
+                {/*    Яркие, карикатурные образы героев мультфильмов, оживших в <br/>*/}
+                {/*    совершенно необыкновенных мирах, характер которых, <br/>*/}
+                {/*    напрямую связан с характером автора.*/}
+                {/*</div>*/}
 
-                <div className="absolute top-[113vw] left-30 text-xl w-[70vw]">
-                    Но более всего аниматор отличился своим мультсериалом <br/>
-                    Рен и Стимпи, покорившим серда миллионов любителей<br/>
-                    деконтруированных образов и юмора. Сейчас сериал<br/>
-                    обрёл культовый статус.
-                </div>
+                {/*<div className="absolute top-[113vw] left-30 text-xl w-[70vw]">*/}
+                {/*    Но более всего аниматор отличился своим мультсериалом <br/>*/}
+                {/*    Рен и Стимпи, покорившим серда миллионов любителей<br/>*/}
+                {/*    деконтруированных образов и юмора. Сейчас сериал<br/>*/}
+                {/*    обрёл культовый статус.*/}
+                {/*</div>*/}
 
 
             </div>

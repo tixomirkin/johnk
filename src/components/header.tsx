@@ -50,6 +50,7 @@ export default function Header({logoFill = "white", thisUrl = "/"}) {
         <motion.header
             style={{ backgroundColor, paddingTop: paddingY, paddingBottom: paddingY, paddingLeft:  paddingX, paddingRight: paddingX }}
             data-active={isOpen}
+            data-fill={logoFill}
             className="group fixed w-screen z-50 flex flex-row justify-between items-center px-25 py-10 motion-blur-in-md">
 
             <motion.div
@@ -57,7 +58,7 @@ export default function Header({logoFill = "white", thisUrl = "/"}) {
                 className="z-50">
                 <Link href="/">
                     {/*<Image className="z-50 fill-amber-50 test" color={"#807401"} style={{fill: "#807401"}} width={100} src={logo} alt=""/>*/}
-                    <Logo fill={logoFill} />
+                    <Logo className="group-data-[fill=white]:fill-white group-data-[fill=yellow]:fill-[#EDE20F]  group-data-[fill=black]:fill-black group-data-[active=true]:fill-white!"/>
                 </Link>
             </motion.div>
 
@@ -67,13 +68,16 @@ export default function Header({logoFill = "white", thisUrl = "/"}) {
                 className="  z-50 h-10 w-10 rounded-lg ">
 
 
-                <div className="grid justify-items-center gap-1.5 ">
+                <div  className="grid justify-items-center gap-1.5 ">
                     <span
-                        className="h-1 w-8 rounded-full bg-white transition group-data-[active=true]:rotate-45 group-data-[active=true]:translate-y-2.5"></span>
+                        className="h-1 w-8 rounded-full bg-white transition group-data-[active=true]:rotate-45 group-data-[active=true]:translate-y-2.5
+                        group-data-[fill=black]:bg-black group-data-[fill=yellow]:bg-[#EDE20F]  group-data-[active=true]:bg-white!"></span>
                     <span
-                        className="h-1 w-8 rounded-full bg-white group-data-[active=true]:scale-x-0 transition"></span>
+                        className="h-1 w-8 rounded-full bg-white group-data-[active=true]:scale-x-0 transition
+                        group-data-[fill=black]:bg-black group-data-[fill=yellow]:bg-[#EDE20F]  group-data-[active=true]:bg-white!"></span>
                     <span
-                        className="h-1 w-8 rounded-full bg-white group-data-[active=true]:-rotate-45 group-data-[active=true]:-translate-y-2.5"></span>
+                        className="h-1 w-8 rounded-full bg-white group-data-[active=true]:-rotate-45 group-data-[active=true]:-translate-y-2.5
+                        group-data-[fill=black]:bg-black group-data-[fill=yellow]:bg-[#EDE20F]  group-data-[active=true]:bg-white!"></span>
                 </div>
 
 

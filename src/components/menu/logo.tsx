@@ -1,5 +1,5 @@
 
-export default function Logo({fill, ...props} : { fill: string }) {
+export default function Logo({fill, ...props} : { fill?: string, className?: string }) {
     return (
         <svg width="100" viewBox="0 0 169 129" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
             <path

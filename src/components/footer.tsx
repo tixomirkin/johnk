@@ -8,7 +8,7 @@ import logo from "@/public/footer/footer_logo.svg"
 export default function Footer() {
     return (
         <div className="relative  ">
-            <Image src={footer_bg} alt=""/>
+            <Image src={footer_bg} className="w-full" alt=""/>
             <div className="h-40 bg-[#00188C] pb-80">
                 <div className="flex flex-row gap-4 items-end justify-center mb-5">
                     <Image className="" src={vk} alt=""/>

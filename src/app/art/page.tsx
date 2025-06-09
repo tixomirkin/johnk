@@ -16,7 +16,7 @@ export default function NowPage() {
                     // width="805" height="550"
                     allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameBorder="0"
                     allowFullScreen></iframe>
-                <NextBtn className="absolute bottom-[22vw] right-[5vw] w-60" to="/path-to-success" isBlack={true}>Наши дни</NextBtn>
+                <NextBtn className="absolute bottom-[22vw] right-[5vw] w-60" to="/now" isBlack={true}>Наши дни</NextBtn>
             </div>
             <Footer/>
         </>

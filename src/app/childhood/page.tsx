@@ -7,7 +7,7 @@ import NextBtn from "@/components/next_btn";
 export default function Childhood() {
     return (
         <>
-            <Header thisUrl="/childhood" logoFill="black"/>
+            <Header thisUrl="/childhood" logoFill="black" toBg="rgba(255, 255, 255, 0.5)"/>
             <div className="relative w-full">
                 <Image src={page_img} className="w-full mb-[-16vw]" alt=""/>
                 <NextBtn className="absolute bottom-[25vw] right-[10vw] w-70" to="/path-to-success">Путь к успеху</NextBtn>

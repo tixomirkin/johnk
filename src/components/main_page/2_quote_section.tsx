@@ -10,7 +10,7 @@ export default function QuoteSection() {
             <div className="absolute w-full h-full p-20 flex flex-row items-center justify-center ">
                 <div className="h-full relative">
                     <Image className="object-contain relative h-full z-30" src={qu} alt=""/>
-                    <Image className="object-contain absolute top-1/2 right-0 w-2/6 z-10" src={quote_img} alt=""/>
+                    <Image className="object-contain absolute top-1/2 right-0 w-2/6 z-10 " src={quote_img} alt=""/>
                 </div>
 
             </div>

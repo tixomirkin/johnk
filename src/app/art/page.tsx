@@ -7,7 +7,7 @@ import NextBtn from "@/components/next_btn";
 export default function NowPage() {
     return (
         <>
-            <Header thisUrl="/art" logoFill="black" />
+            <Header thisUrl="/art" logoFill="black" toBg="rgba(255, 255, 255, 0.5)"/>
             <div className="relative w-full">
                 <Image src={page_img} className="w-full mb-[-16vw]" alt=""/>
                 <iframe

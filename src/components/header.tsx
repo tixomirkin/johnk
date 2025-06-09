@@ -11,7 +11,7 @@ import Logo from "@/components/menu/logo";
 
 
 
-export default function Header({logoFill = "white", thisUrl = "/"}) {
+export default function Header({logoFill = "white", thisUrl = "/", toBg="rgba(0, 0, 0, 0.5)"}) {
     const [isOpen, setIsOpen] = useState(false);
     const { scrollY } = useScroll();
     const { height: screenHeight } = useWindowSize();
@@ -19,7 +19,7 @@ export default function Header({logoFill = "white", thisUrl = "/"}) {
     const backgroundColor = useTransform(
         scrollY,
         [screenHeight * 0.8, screenHeight],
-        ["rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0.5)"]
+        ["rgba(0, 0, 0, 0)", toBg]
     );
 
     // const fillColor = useTransform(

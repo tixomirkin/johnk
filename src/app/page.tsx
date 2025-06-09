@@ -10,6 +10,7 @@ import Footer from "@/components/footer";
 import Section4 from "@/components/main_page/4_section";
 import Section5 from "@/components/main_page/5_section";
 import {useEffect, useState} from "react";
+import ObserverProvider from "@/utils/ObserverProvider";
 
 export default function Home() {
 
@@ -25,6 +26,8 @@ export default function Home() {
 
   return (
       <>
+          <ObserverProvider>
+
           {!loading ? (
               <>
                   <Header/>
@@ -43,7 +46,7 @@ export default function Home() {
               </div>
           )}
 
-
+          </ObserverProvider>
       </>
 
   );

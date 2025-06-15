@@ -31,7 +31,14 @@ export default function Section3() {
     return (
         <>
             <div className="relative  ">
-                <Image src={sign} alt="" className="object-contain absolute -top-6 right-0 w-[42vw] z-60" />
+                <motion.div
+                    initial={{opacity: 0, scale: 2, rotate: 10}}
+                    transition={{duration: 0.5, delay: 0.5}}
+                    whileInView={{opacity: 1, scale: 1, rotate: 0}}
+                    viewport={{ once: true }}
+                    className="object-contain absolute -top-6 right-0 w-[42vw] z-60">
+                    <Image src={sign} alt="" className=" w-full h-full" />
+                </motion.div>
                 <Image className="object-cover w-full mt-[-13vh]" src={bg} alt=""/>
                 <motion.div
                     ref={ref}

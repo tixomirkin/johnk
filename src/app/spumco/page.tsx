@@ -10,9 +10,9 @@ export default function SpumcoPage() {
             <Header logoFill="black" thisUrl="/spumco" toBg="rgba(255, 255, 255, 0.5)" />
             <div className="relative w-full">
                 <Image src={page_img} className="w-full mb-[-17vw]" alt=""/>
-                <NextBtn className="absolute bottom-[34vw] right-[5vw] w-100" to="/art">Современное искусство</NextBtn>
-                <NextBtn className="absolute bottom-[30vw] right-[5vw] w-65" to="/ren-stimpy">Рен и Стимпи</NextBtn>
-                <NextBtn className="absolute bottom-[26vw] right-[5vw] w-49" to="/critics">Критика</NextBtn>
+                <NextBtn className="absolute bottom-[34vw] right-[5vw] w-100 text-[#EDE20F]" to="/art">Современное искусство</NextBtn>
+                <NextBtn className="absolute bottom-[30vw] right-[5vw] w-65 text-[#EDE20F]" to="/ren-stimpy">Рен и Стимпи</NextBtn>
+                <NextBtn className="absolute bottom-[26vw] right-[5vw] w-49 text-[#EDE20F]" to="/critics">Критика</NextBtn>
             </div>
             <Footer/>
         </>

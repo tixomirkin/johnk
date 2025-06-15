@@ -57,7 +57,7 @@ const ModalMenu = ({ handleClose, modalOpen, thisUrl } : {handleClose: () => voi
                     <NavItem to="/spumco" thisUrl={thisUrl}>SPUMCO</NavItem>
                     <NavItem to="/other" thisUrl={thisUrl}>Другие проекты</NavItem>
                     <NavItem to="/critics" thisUrl={thisUrl}>Критика</NavItem>
-                    <NavItem to="/art" thisUrl={thisUrl}>Современное искусство</NavItem>
+                    <NavItem to="/art" thisUrl={thisUrl}>След в искусстве</NavItem>
                     <NavItem to="/now" thisUrl={thisUrl}>Наши дни</NavItem>
                 </div>
 

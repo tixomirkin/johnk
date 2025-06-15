@@ -7,7 +7,7 @@ export default function RenStimpyPage() {
     return (
         <>
             <Header thisUrl="/style" />
-            <Image src={page_img} className="w-full mb-[-16vw]" alt=""/>
+            <Image src={page_img} className="w-full mb-[-10vw]" alt=""/>
             <Footer/>
         </>
     )

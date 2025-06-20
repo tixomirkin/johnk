@@ -5,8 +5,7 @@ import page_img from "@/public/4_page/page.png"
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
-import {motion, useScroll, useTransform} from "framer-motion";
-import {useRef} from "react";
+import {motion} from "framer-motion";
 
 import el1 from "@/public/4_page/el1.png";
 import el2 from "@/public/4_page/el2.png";

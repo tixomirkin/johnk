@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="scroll-smooth overscroll-y-none" lang="en">
+    <html className="scroll-smooth overscroll-y-none overflow-x-hidden" lang="en">
       <body
         className={`antialiased bg-black`}
       >

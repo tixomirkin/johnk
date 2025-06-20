@@ -11,10 +11,19 @@ import {useRef} from "react";
 
 export default function Section3() {
     const ref = useRef(null)
+    const refBg = useRef(null)
     const { scrollYProgress } = useScroll({
         target: ref,
         offset: ["start end", "end end"],
     })
+
+    const { scrollYProgress: scrollYProgressBg } = useScroll({
+        target: refBg,
+        offset: ["start end", "start start"],
+    })
+
+    const blurAmount = useTransform(scrollYProgressBg, [0, 1], [100, 0]); // Масштаб от 1 до 0.7 при скролле 0
+    const blurFilter = useTransform(blurAmount, value => `blur(${value}px)`)
 
     const rotate = useTransform(
         scrollYProgress,
@@ -39,7 +48,11 @@ export default function Section3() {
                     className="object-contain absolute -top-6 right-0 w-[42vw] z-60">
                     <Image src={sign} alt="" className=" w-full h-full" />
                 </motion.div>
-                <Image className="object-cover w-full mt-[-13vh]" src={bg} alt=""/>
+
+                <motion.div ref={refBg} style={{filter: blurFilter}} className="w-full mt-[-13vh]">
+                    <Image className="object-cover w-full" src={bg} alt=""/>
+                </motion.div>
+
                 <motion.div
                     ref={ref}
                     style={{rotate, scale}}

@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import page_img from "@/public/2_page/bg.png"
+import page_img from "@/public/2_page/page.png"
 import el2 from "@/public/2_page/el2.png"
 import el3 from "@/public/2_page/el3.png"
 import text from "@/public/2_page/text.png"
@@ -36,7 +36,7 @@ export default function Childhood() {
     return (
         <>
             <Header thisUrl="/childhood" logoFill="black" toBg="rgba(255, 255, 255, 0.5)"/>
-            <div className="relative w-full mb-[-117vw]">
+            <div className="relative w-full mb-[-114vw]">
                 <Image src={page_img} className="w-full mb-[-16vw]" alt=""/>
 
                 <motion.div

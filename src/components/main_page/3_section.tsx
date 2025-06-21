@@ -3,6 +3,7 @@
 import Image from "next/image";
 import bg from "@/public/main_page/3_section/bg.png"
 import tiket from "@/public/main_page/3_section/tiket.png"
+import txt from "@/public/main_page/txt.svg"
 import sign from "@/public/main_page/3_section/sign.png"
 
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -40,6 +41,7 @@ export default function Section3() {
     return (
         <>
             <div className="relative  ">
+                <Image className="absolute w-[60wv] left-[20vw] top-[115vw] z-30" src={txt} alt=""/>
                 <motion.div
                     initial={{opacity: 0, scale: 2, rotate: 10}}
                     transition={{duration: 0.5, delay: 0.5}}

@@ -39,9 +39,9 @@ export default function PathToSuccessPage() {
             <Header thisUrl="/path-to-success" logoFill="yellow"/>
             <div className="relative w-full">
                 <Image src={page_img} className="w-full mb-[-100vw] pointer-events-none select-none" alt=""/>
-                <NextBtn className="absolute bottom-[115vw] right-[10vw]" to="/childhood">История мультфильма</NextBtn>
-                <NextBtn className="absolute bottom-[110vw] right-[10vw]" to="/spumco">Студия SPUMCO</NextBtn>
-                <NextBtn className="absolute bottom-[105vw] right-[10vw]" to="/style">Уникальный стиль автора</NextBtn>
+                <NextBtn className="absolute text-white bottom-[115vw] right-[10vw]" to="/childhood">История мультфильма</NextBtn>
+                <NextBtn className="absolute text-white bottom-[110vw] right-[10vw]" to="/spumco">Студия SPUMCO</NextBtn>
+                <NextBtn className="absolute text-white bottom-[105vw] right-[10vw]" to="/style">Уникальный стиль автора</NextBtn>
             </div>
 
             <motion.div

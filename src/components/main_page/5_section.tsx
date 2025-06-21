@@ -22,7 +22,7 @@ export default function Section5() {
     return (
         <motion.div ref={refBg} style={{translateY}} className="relative mt-[-33vw] mb-[-43vw] ">
             <Image src={bg} alt="" className="w-full intersect:motion-preset-slide-up motion-delay-200" />
-            <NextBtn className="absolute top-[50vw] right-[10vw] w-90 intersect:motion-preset-slide-up motion-delay-200" to="/childhood">Детство художника</NextBtn>
+            <NextBtn className="absolute top-[50vw] right-[10vw] w-90 text-white intersect:motion-preset-slide-up motion-delay-200" to="/childhood">Детство художника</NextBtn>
         </motion.div>
     )
 }

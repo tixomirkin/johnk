@@ -62,7 +62,7 @@ export default function Childhood() {
 
 
 
-                <NextBtn className="absolute bottom-[120vw] right-[10vw] w-70" to="/path-to-success">Путь к успеху</NextBtn>
+                <NextBtn className="absolute text-white bottom-[120vw] right-[10vw] w-70" to="/path-to-success">Путь к успеху</NextBtn>
             </div>
             <Footer/>
         </>
